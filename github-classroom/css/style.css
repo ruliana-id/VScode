@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+	background:black;
+}
+.container {
+    width: 100vw;
+    height: 100%;
+    border: 5px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.2px;
+    background:black;
+    color:white;
+    
+}
+.wrapper {
+    width: 95%;
+    height: 95%;
+    border: 1px solid #000;
+    /*border-radius: 10px;*/
+    position: relative;
+    background:  gray;
+    border-radius: 20px;
+}
+header {
+    height: 50px;
+    align-items: center;
+    /* border: 1px solid; */
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+.logo {
+    margin-left: 50px;
+    pointer-events: none;
+    font-size: 25px;
+}
+.navigation ul {
+    display: flex;
+    margin-right: 50px;
+}
+.navigation ul li {
+    list-style: none;
+    padding: 5px 10px;
+    /*border: 1px solid;*/
+    height: 100%;
+}
+.navigation ul li a {
+    text-decoration: none;
+    padding:5px 10px;
+    color: #fff;
+}
+.navigation ul li a:hover {
+    background-color: rgba(228, 222, 222, 0.3);
+    border-radius: 20px;
+}
+main {
+    position: relative;
+    /* border: 1px solid; */
+}
+/* header */
+.header .header-content {
+    /* border: 5px solid #0f0; */
+    position: relative;
+}
+.header .header-content h1 {
+    /* border: 1px solid; */
+    text-align: center;
+    pointer-events: none;
+    padding: 20px 0;
+    text-transform:capitalize;
+}
+.header .header-content p {
+    /* border: 1px solid; */
+    text-align: center;
+    pointer-events: none;
+    color: #fff;
+}
+
+/* banner */
+.content-banform {
+    width: 100%;
+    /* border: 5px solid #00f; */
+    padding: 20px;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-around;
+    position: relative;
+    box-sizing: border-box;
+    
+}
+.content-banform .banner {
+    width: 40%;
+    /*border: 1px solid;*/
+    margin: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background: rgba(219, 218, 217, 0.3);
+    border-radius: 20px; */
+}
+.br-image {
+    width: 100%;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+}
+.br-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+.br-image label {
+    display: block;
+    /* border: 1px solid; */
+    font-size: 14px;
+    padding: 10px 50px 10px 20px;
+    position: relative;
+    font-style: italic;
+    color: #fff;
+}
+.user {
+    /*border: 3px solid lime; */
+    position: relative;
+    display: flex;
+    margin:10px;
+
+}
+.user .profile-image {
+    width: 35px;
+    height: 35px;
+    background-color: rgb(228, 222, 222);
+    border-radius: 50%;
+    color: rgb(134, 132, 132);
+    line-height: 35px;
+    text-align: center;
+}
+.user .desc {
+    /* border: 1px solid ; */
+    display: block;
+    margin: 0 0 0 10px;
+    pointer-events: none;
+}
+.user .desc span {
+    font-weight: 600;
+    text-transform:capitalize;
+
+}
+.user .desc label {
+    font-size: 12px;
+    font-weight: 100;
+    color:#fff;
+    letter-spacing: 1px;
+    font-style: italic;
+    text-transform:capitalize;
+}
+
+/* form */
+.content-banform .form-input {
+    width: 40%;
+    margin: 10px;
+    /*border: 3px solid blueviolet; */
+    padding: 10px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: rgba(219, 218, 217, 0.3);
+    border-radius: 20px;
+}
+.form-input fieldset {
+    width: 95%;
+    padding: 20px;
+}
+.form-input fieldset legend {
+    font-size: 20px;
+    font-weight: 550;
+    text-transform:capitalize;
+    pointer-events: none;
+}
+.form-input fieldset form {
+    margin-top: 30px;
+}
+.form-input fieldset p {
+    font-size: 12px;
+    font-weight: 100;
+    color:#fff;
+    pointer-events: none;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+fieldset .name, .mail-adds, .select-ops {
+    margin: 25px 0;
+    position: relative;
+}
+fieldset div.name {
+    position: relative;
+}
+fieldset label {
+    pointer-events: none;
+    padding: 0 12px 0 12px;
+    color: #fff;
+    font-weight:600;
+    text-transform:capitalize;
+}
+fieldset .select-ops {
+    display: flex;
+}
+fieldset .select-ops select {
+    width: 100%;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 15px;
+    position: absolute;
+    top: 20px;
+    color: rgb(120, 120, 120);
+    background:gray;
+    color:white;
+    border:0.1px solid white;
+    outline:none;
+}
+fieldset input {
+    width: 100%;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 15px;
+    color: white;
+    text-transform: capitalize;
+    background-color:transparent;
+    border:none;
+    outline:none;
+    border-radius:5px;
+    border-bottom:3px solid #a9a9a9;
+
+}
+button {
+	width:100%;
+	height:35px;
+	margin:30px 0;
+	background:rgba(255,255,255,0.2);
+	border:none;
+	text-transform:uppercase;
+	font-weight:600;
+	color:inherit;
+	letter-spacing:0.5px;
+	border-radius:5px;
+}
+
+/* footer */
+
+.footer {
+	width:40%;
+	/* border:1px solid; */
+	position:relative;
+	margin:0 70px;
+}
+.footer p {
+	font-weight:600;
+    pointer-events: none;
+}
+.footer table {
+	margin:30px 0;
+    pointer-events: none;
+}
+.footer table tr td {
+	padding:10px 30px;
+}
+.footer table tr:nth-child(1) td:nth-child(1),
+.footer table tr:nth-child(2) td:nth-child(1),
+.footer table tr:nth-child(3) td:nth-child(1)
+ {
+	font-size:18px;
+}
+.footer table tr:nth-child(1) td:nth-child(2),
+.footer table tr:nth-child(2) td:nth-child(2),
+.footer table tr:nth-child(3) td:nth-child(2)
+{
+	font-size:14px;
+}
+
+
+/* new page */
+.new-page {
+    width: 95%;
+    height: 100%;
+    /* border: 5px solid red; */
+    margin-top: 100px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.location {
+    width: 95%;
+    margin: 0 auto;
+}
+.first-location {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid; */
+}
+.first-location i {
+    margin: 15px;
+}
+.first-location b {
+    position: absolute;
+    margin: 15px 0;
+}
+.first-location label {
+    margin-top: 40px;
+}
+section.closing {
+    margin-top: 70px;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.closing p {
+    text-align: center;
+    margin: 10px 0;
+}
+.closing b {
+    font-size: 23px;
+}
+.closing button, a {
+    width: 200px;
+    text-decoration: none;
+    color: #fff;
+}
+.closing button a {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+footer {
+    width: 95%;
+    height: 100%;
+    /* border: 5px solid red; */
+    margin-top: 2px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+footer b {
+    font-size: 23px;
+}
+footer p {
+    font-size: 12px;
+    font-weight: 100;
+    font-style: italic;
+}
+/* responsive */
+
+@media screen and (max-width:800px) {
+.content-banform {
+    display: flex;
+    overflow: hidden;
+    flex-direction:column;
+    position: relative;
+    align-items:center;
+    box-sizing: border-box;
+}
+.content-banform .banner {
+    width: 80%;
+    /* border: 1px solid; */
+    margin: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.content-banform .form-input {
+    width: 80%;
+    margin: 10px;
+    /* border: 3px solid blueviolet; */
+    padding: 10px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.user {
+	margin:20px 0 50px 0;
+}
+.first-location {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.first-location b {
+    position: absolute;
+    margin: 15px 0;
+}
+.first-location label {
+    margin: 0;
+}
+.first-location span {
+    margin-top: 20px;
+}
+section.closing {
+    margin-top: 150px;
+}
+footer {
+	margin:auto;
+	width:95%;
+	position:relative;
+	display:flex;
+	flex-direction:column;
+}
+.footer {
+	width:80%;
+    margin:0 auto;
+}
+}
